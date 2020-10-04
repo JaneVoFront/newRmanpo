@@ -9,6 +9,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Builder" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/newRmanpo" vcs="Git" />
   </component>
 </project>

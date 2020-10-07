@@ -1,0 +1,15 @@
+.date {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  color: $soft-white;
+  &__img {
+    color: $blue;
+    margin-right: 10px;
+    width: 21px;
+    height: 21px;
+  }
+  &__text {
+    font: 14px 'Lato', sans-serif;
+  }
+}

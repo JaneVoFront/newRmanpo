@@ -78,3 +78,18 @@
     @content;
   }
 }
+
+@mixin transition($who, $s, $type) {
+  transition: all $s linear;
+  -webkit-transition: all $s linear;
+  -moz-transition: all $s linear;
+  -ms-transition: all $s linear;
+}
+
+@mixin transform($property) {
+  transform: translateY($property);
+  -webkit-transform: translateY($property);
+  -moz-transform: translateY($property);
+  -ms-transform: translateY($property);
+  -o-transform: translateY($property);
+}

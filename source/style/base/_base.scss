@@ -22,3 +22,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+a {
+  @include transition(all, 0.3s, leaner)
+}
+
+//position (size, left, right, center)
+.col-2 {
+   width: 50%;
+  }
+.left {
+  justify-content: flex-start;
+}
+.right {justify-content: flex-end}

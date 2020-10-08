@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 
 *, *::before, *::after { 
   box-sizing: border-box; 
@@ -23,7 +27,7 @@ body {
   overflow: hidden;
 }
 a {
-  @include transition(all, 0.3s, leaner)
+  @include transition(all 0.3s leaner)
 }
 
 //position (size, left, right, center)
@@ -31,6 +35,10 @@ a {
    width: 50%;
   }
 .left {
+  display: flex;
   justify-content: flex-start;
 }
-.right {justify-content: flex-end}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}

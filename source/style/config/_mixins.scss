@@ -79,17 +79,25 @@
   }
 }
 
-@mixin transition($who, $s, $type) {
-  transition: all $s linear;
-  -webkit-transition: all $s linear;
-  -moz-transition: all $s linear;
-  -ms-transition: all $s linear;
+@mixin transition($property) {
+  transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
 }
 
 @mixin transform($property) {
-  transform: translateY($property);
-  -webkit-transform: translateY($property);
-  -moz-transform: translateY($property);
-  -ms-transform: translateY($property);
-  -o-transform: translateY($property);
+  transform: $property;
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+}
+@mixin transform-origin($property) {
+  -webkit-transform-origin: $property;
+  transform-origin: $property;
+}
+@mixin transform-style($property){
+  transform-style: $property;
+  -webkit-transform-style: $property;
 }

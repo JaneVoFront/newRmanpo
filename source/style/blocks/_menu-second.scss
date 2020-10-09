@@ -12,7 +12,7 @@
 .menu-second_item {
   list-style: none;
   position: relative;
-  & a {
+  & > a {
     display: inline-block;
     position: relative;
     padding: 15px 0px;
@@ -20,12 +20,26 @@
     font-size: $font-size_normal;
     color: $soft-black;
     text-decoration: none;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 0px;
+      height: 2px;
+      background: $light-blue;
+      top: 70%;
+      left: 50%;
+      @include transition(all 0.3s linear);
+      @include transform(translateX(-50%));
+    }
+    &:hover::before {
+      width: 40px;
+    }
   }
   &__dropdown > a::after {
     position: absolute;
     font-family: fontAwesome;
     content: "\f107";
-    right: -20px;
+    right: -15px;
     top: 50%;
     @include transform(translateY(-50%))
   }

@@ -26,14 +26,18 @@
 .header__logo.m--show {
   transform: translate3D(0, 0, 0);
 }*/
-
+.header {
+  ul li {
+    list-style: none;
+  }
+}
 .header-central {
   background: #fff;
   padding: 20px 100px;
   border-bottom: 1px solid $soft-white;
 }
-.header {
-  ul li {
-    list-style: none;
-  }
+.header-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 100px 0 146px;
 }

@@ -1,0 +1,30 @@
+.search-info {
+  display: flex;
+  align-items: center;
+  &_items {
+    padding: 0 10px;
+    &:first-child {
+      border-right: 1px solid $soft-white;
+    }
+  }
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  & svg {
+    width: 20px;
+    height: 20px;
+    fill: $soft-black;
+  }
+  &:hover svg {
+    fill: $light-blue;
+  }
+}
+.info {
+  font-size: $font-size_big;
+  color: $soft-black;
+  &:hover {
+  color: $light-blue;
+  }
+}

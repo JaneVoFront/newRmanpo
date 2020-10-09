@@ -5,6 +5,9 @@
 @import "config/mixins";
 //@import "config/sprite";
 
+// Base
+@import "base/base";
+
 // Fonts
 @import "base/fonts";
 
@@ -12,9 +15,7 @@
 @import "blocks/date";
 @import "blocks/logo";
 @import "blocks/menu-second";
-
-// Base
-@import "base/base";
+@import "blocks/search-info";
 
 // Layout
 @import "layout/header";

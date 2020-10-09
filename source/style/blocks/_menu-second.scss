@@ -1,5 +1,10 @@
 .menu-second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   font-family: "Montserrat", sans-serif;
+
   & ul {
     display: flex;
   }
@@ -58,6 +63,9 @@
       font-size: $font-size_normal;
       line-height: 18px;
       text-decoration: none;
+      &:hover {
+        color: $light-blue;
+      }
     }
   }
   & h3 {

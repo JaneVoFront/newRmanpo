@@ -16,6 +16,8 @@
 @import "blocks/logo";
 @import "blocks/menu-second";
 @import "blocks/search-info";
+@import "blocks/button-close";
+@import "blocks/search_popup";
 
 // Layout
 @import "layout/header";
@@ -26,3 +28,8 @@
 
 // Pages
 @import "pages/index";
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}

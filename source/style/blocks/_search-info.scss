@@ -1,17 +1,21 @@
 .search-info {
   display: flex;
   align-items: center;
-  &_items {
+  &__item {
     padding: 0 10px;
     &:first-child {
       border-right: 1px solid $soft-white;
     }
   }
 }
-.search {
+.search_icon {
   display: flex;
   align-items: center;
   margin-top: 3px;
+  & img {
+    width: 20px;
+    height: 20px;
+  }
   & svg {
     width: 20px;
     height: 20px;
@@ -21,7 +25,7 @@
     fill: $light-blue;
   }
 }
-.info {
+.info_icon {
   font-size: $font-size_big;
   color: $soft-black;
   &:hover {

@@ -9,7 +9,7 @@
     display: flex;
   }
 }
-.menu-second_item {
+.menu-second__item {
   list-style: none;
   position: relative;
   & > a {
@@ -35,7 +35,7 @@
       width: 40px;
     }
   }
-  &__dropdown > a::after {
+  &_dropdown > a::after {
     position: absolute;
     font-family: fontAwesome;
     content: "\f107";
@@ -43,14 +43,14 @@
     top: 50%;
     @include transform(translateY(-50%))
   }
-  &__dropdown:hover > ul.menu-second_sub-menu {
+  &_dropdown:hover > ul.menu-second__sub-menu {
       visibility: visible;
       opacity: 1;
       @include transform(rotateX(-0deg));
       transition-delay: 0s;
   }
 }
-.menu-second_sub-menu {
+.menu-second__sub-menu {
   display: flex;
   align-items: flex-start;
   flex-direction: column;

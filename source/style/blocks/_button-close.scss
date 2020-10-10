@@ -1,0 +1,48 @@
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 35px;
+  line-height: 35px;
+  height: 35px;
+  cursor: pointer;
+  border: 2px solid $soft-white;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  &:before, &:after {
+    position: absolute;
+    width: 16px;
+    content: '';
+    height: 2px;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+    left: 8px;
+    background-color: $soft-white;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+  &:hover {
+  border-color: $pink;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+    &:before, &:after {
+      background-color: $pink;
+    }
+  }
+}

@@ -8,7 +8,7 @@
     }
 }
 
-.gen-menu_item {
+.gen-menu__item {
     position: relative;
     list-style: none;
     font-size: $font-size_medium;
@@ -33,21 +33,18 @@
             @include transform(translateX(-50%));
             @include transition(all 0.3s linear);
         }
-
         &:hover:after, &:active:after {
             text-decoration: none;
             width: 0;
         }
     }
-
-    &__logo {
-        margin-top: -70px;
-        flex: 2;
-
-        & a::after {
-            background: none;
-            width: 0;
-        }
+}
+.gen-menu__logo {
+    margin-top: -70px;
+    flex: 2;
+    & a::after {
+        background: none;
+        width: 0;
     }
 }
 

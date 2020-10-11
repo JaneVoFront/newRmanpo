@@ -20,36 +20,43 @@ header.header
                      li
                         a(href="#" alt='На главную' title='Дополнительное образование') Дополнительное образование
     .header-central
-        nav.gen-menu
-            ul
-                li.gen-menu__item
-                    a(href="#tab_a" alt='Об академии' title='Об академии') Об академии
-                li.gen-menu__item
-                    a(href="#tab_b" alt='Образование' title='Образование') Образование
+        nav.gen-menu.tabs
+            ul.tabs__nav
+                li.gen-menu__item.tabs__link Об академии
+                li.gen-menu__item.tabs__link Образование
                 li.gen-menu__item.gen-menu__logo
                     .logo
                           a(href="#" alt='На главную' title='На главную')
                             img.logo__img(src="/assets/img/logo.png")
                             span.logo__text Российская медицинская академия <br> непрерывного профессионального образования
-                li.gen-menu__item
-                    a(href="#tab_c" title='Высшее образование') Наука
-                li.gen-menu__item
-                    a(href="#tab_d" title='Высшее образование') Клиника
-            .tab-content
-                .tab-content__item#tab_a
+                li.gen-menu__item.tabs__link Наука
+                li.gen-menu__item.tabs__link Клиника
+            .tab__content
+                .tab__pane#tab_a
                     .container
-                        h3.menu-title
+                        h3.menu-title Об академии
                         .tab-content__item_inner
                             ul
                                 li
-                                    a(href="#" alt='На главную' title='На главную') afvnpfnvfvml;v vl;afmv scv,sl;avmklm svmafvml;afkvm asfvmflvmf asfvmafl;v
-                .tab-content__item#tab_b
-                                    .container
-                                        h3.menu-title
-                                        .tab-content__item_inner
-                                            ul
-                                                li
-                                                    a(href="#" alt='На главную' title='На главную') afvnpfnvfvml;v vl;afmv scv,sl;avmklm svmafvml;afkvm asfvmflvmf asfvmafl;v al;fvmafv , j k  k
+                                    a(href="#") Сведения об учредителе
+                                li
+                                    a(href="#") Документы
+                                li
+                                    a(href="#") Президент
+                                li
+                                    a(href="#") Руководство
+                                li
+                                    a(href="#") История РМАНПО
+                                li
+                                    a(href="#") РМАНПО сегодня
+                                li
+                                    a(href="#") Ученый совет
+                                li
+                                    a(href="#") Почетные заведующие кафедрами
+                            ul
+                .tab__pane#tab_b
+                button.close
+
 
 
     .header-bottom

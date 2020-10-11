@@ -29,7 +29,8 @@
 // Pages
 @import "pages/index";
 
-.show {
-  visibility: visible;
-  opacity: 1;
+.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
 }

@@ -3,8 +3,8 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0;
         margin: 0;
+        padding: 0 100px 10px;
     }
 }
 
@@ -17,34 +17,74 @@
     font-weight: 600;
     flex: 1;
     text-align: center;
-
-    & a {
-        color: $soft-black;
+    color: $soft-black;
+    text-decoration: none;
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 2px;
+        background: $light-blue;
+        top: 100%;
+        left: 50%;
+        @include transform(translateX(-50%));
+        @include transition(all 0.3s linear);
+    }
+    &:hover:after, &:active:after {
         text-decoration: none;
-
-        &::after {
-            position: absolute;
-            content: '';
-            width: 40px;
-            height: 2px;
-            background: $light-blue;
-            top: 100%;
-            left: 50%;
-            @include transform(translateX(-50%));
-            @include transition(all 0.3s linear);
-        }
-        &:hover:after, &:active:after {
-            text-decoration: none;
-            width: 0;
-        }
+        width: 0;
+    }
+    & a {
+        text-decoration: none;
     }
 }
+
 .gen-menu__logo {
-    margin-top: -70px;
+    margin-top: -50px;
     flex: 2;
-    & a::after {
-        background: none;
-        width: 0;
+    &:after {
+    background: none;
+    width: 0;
+    }
+}
+
+.tab__content {
+    position: relative;
+    & .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+    }
+}
+.tab__pane {
+    display: none;
+    padding: 10px 0;
+    background-color: $dark-blue;
+    &.active {
+        display: block;
+    }
+    & ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & li {
+            display: list-item;
+            & a {
+                color: $soft-white;
+                padding: 5px 0;
+                line-height: 1.2;
+                display: inline-block;
+
+                &:hover {
+                    color: $soft-blue;
+                }
+            }
+        }
+    }
+    & .menu-title {
+        margin-bottom: 27px;
     }
 }
 

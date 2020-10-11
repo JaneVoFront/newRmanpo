@@ -1,13 +1,13 @@
 .close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
   width: 35px;
   line-height: 35px;
   height: 35px;
   cursor: pointer;
   border: 2px solid $soft-white;
   border-radius: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  outline: none;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;

@@ -1,5 +1,5 @@
 .gen-menu {
-    & ul {
+    & > ul {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -69,22 +69,21 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        & li {
-            display: list-item;
-            & a {
-                color: $soft-white;
-                padding: 5px 0;
-                line-height: 1.2;
-                display: inline-block;
-
-                &:hover {
-                    color: $soft-blue;
-                }
-            }
+    }
+    & a {
+        color: $soft-white;
+        padding: 5px 0;
+        line-height: 1.2;
+        display: inline-block;
+        &:hover {
+            color: $soft-blue;
         }
     }
     & .menu-title {
         margin-bottom: 27px;
+        padding: 10px 0;
     }
 }
-
+.tab-content__items {
+    display: flex;
+}

@@ -1,11 +1,13 @@
 .outer_close
 .info-sidebar
 	button.close
-	.info-sidbar__items.social-links
-		a.icon__fb
-		a.icon__ytube
-		a.icon__vk
-		a.icon__inst
+	.info-sidebar__items.social-links
+		a.social-links__items.icon__youtube(href="#" title="Официальный канал Академии")
+			img.img-svg(src="/assets/img/youtube-icon.svg")
+		a.social-links__items.icon__vk(href="#" title="Официальная группа Академии")
+			img.img-svg(src="/assets/img/vk-icon.svg")
+		a.social-links__items.icon__inst(href="#" title="Официальный Instagram Академии")
+			img.img-svg(src="/assets/img/instagram-icon.svg")
 	.info-sidebar__items.support-links
 		p Call-центр: +7 (495) 680-05-99 доб. 900
 		p Техническая поддержка ЭИОС: +7 (495) 680-05-99 доб. 200
@@ -19,8 +21,6 @@
 		p Вопросы по обучению по программам аспирантуры:
 			a(href="mailto:aspirantura@rmapo.ru" target="_blank" rel="noreferrer noopener") aspirantura@rmapo.ru
 	.info-sidebar__items.feedback
-		p Здесь вы можете задать вопросы ректору РМАНПО, член-корреспонденту РАН, профессору Дмитрию Алексеевичу Сычеву; внести свои предложения по улучшению и развитию образовательной, научной и медицинской деятельности Академии; оставить отзыв о работе любого структурного подразделения или отдельного сотрудника. Ответы на наиболее актуальные вопросы будут даны на страницах нашего сайта, а также во время ежегодных встреч руководства Академии с сотрудниками и обучающимися.
-		.feedback__form
-			input.feedback__form_input
-			button.feedback__form_buttom
-	.info-sidebar__items.faq-link
+		a.button_base.feedback__ask-rector(data-title='Здесь Вы можете задать вопросы ректору РМАНПО, член-корреспонденту РАН, профессору Дмитрию Алексеевичу Сычеву; внести свои предложения по улучшению и развитию образовательной, научной и медицинской деятельности Академии; оставить отзыв о работе любого структурного подразделения или отдельного сотрудника. Ответы на наиболее актуальные вопросы будут даны на страницах нашего сайта, а также во время ежегодных встреч руководства Академии с сотрудниками и обучающимися.') Задать вопрос ректору
+		a.button_base.feedback__faq-link(data-title='Перейти в раздел с ответами на часто задаваемы вопросы. Возможно здесь Вы найдете, что ищете.') Часто задаваемые вопросы
+		a.button_base.feedback__reviews(data-title='Здесь Вы можете оставить свой отзыв о работе Академии, пройденном обучении и ознакомиться с другими отзывами') Отзывы

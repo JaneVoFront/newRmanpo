@@ -1,0 +1,39 @@
+.button_base {
+  padding: 15px 25px;
+  color: $white;
+  box-shadow: 0 0 0 4px $light-grey;
+  text-transform: uppercase;
+  font-size: $font-size_small;
+  background-color: $soft-blue;
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: $font-size_small;
+    text-transform: none;
+    color: $middle-grey;
+    display: flex;
+    padding: 10px;
+    background-color: $white;
+    box-shadow: 0 0 0 4px $light-grey;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: $dark-blue;
+    transition: all 0.5s ease-in-out;
+    &::after {
+      bottom: 100%;
+      opacity: 1;
+      transform:rotate(0deg);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}

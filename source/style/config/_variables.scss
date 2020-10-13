@@ -9,11 +9,12 @@
   $light-grey: #f3f4f7;
   $middle-grey: #707070;
   $soft-white: #e4e4e4;
-  $soft-black: #222222;
+  $soft-black: #222;
   $white: #fff;
 
 
 //font size
   $font-size_normal: 14px;
-  $font-size_medium: 16px;
-  $font-size_big: 20px;
+  $font-size_small: $font-size_normal - 2px;
+  $font-size_medium: $font-size_normal + 2px;
+  $font-size_big: $font-size_normal + 4px;

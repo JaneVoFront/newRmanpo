@@ -36,7 +36,10 @@ a {
   -ms-transition: all, 0.3s, leaner;
   text-decoration: none;
 }
-
+input, button {
+  border: none;
+  outline: none;
+}
 //position (size, left, right, center)
 .col-2 {
    width: 50%;

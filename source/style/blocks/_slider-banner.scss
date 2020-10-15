@@ -1,3 +1,10 @@
+// --slider-variables--
+
+$banners_height: 450px;
+$banners_width: 440px;
+$full-width: 100%;
+
+
 .slider-banner {
   display: flex;
   flex-direction: row;
@@ -7,21 +14,64 @@
   border-bottom: 4px solid $dark-blue;
   overflow: hidden;
   height: 450px;
+  background-color: $light-grey;
+  box-sizing: content-box;
   &__item {
     flex-wrap: wrap;
   }
 }
 .slider_wrap {
   margin: 0 15px;
+  width: calc(#{$full-width} - #{$banners_width * 2 + 30px});
 }
 .slider {
   height: 100%;
-  flex: 2;
-  background-color: #707070;
+  width: 100%;
+  padding: 0 15px;
+  & img {
+    transition: transform 0.5s;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.slider__content {
+  margin: 0 -15px;
+  display: flex;
+  flex-direction: column;
 }
 .banners {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  background-color: #4a76a8;
+  width: 440px;
+  height: $banners_height;
+  &__item {
+    height: $banners_height / 2 - 10px;
+    background-color: #00958c;
+    position: relative;
+    overflow: hidden;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+    &_img {
+      transition: transform 0.5s;
+      object-fit: cover;
+      width: 100%;
+    }
+    &_text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 5px 15px;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      & a {
+        color: $soft-white;
+        font-size: $font-size_normal;
+      }
+    }
+  }
 }

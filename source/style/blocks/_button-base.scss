@@ -10,7 +10,7 @@
   cursor: pointer;
   position: relative;
   text-align: center;
-  &::after {
+  &::after {  // TODO: fix this sheet! look at the info-sidebar, pls
     content: attr(data-title);
     position: absolute;
     z-index: 101;
